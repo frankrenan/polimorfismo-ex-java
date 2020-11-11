@@ -22,12 +22,12 @@ public class ProdutoImportado extends Produto {
 	}
 
 	public double total() {
-		return super.getPrice() + taxa;
+		return super.getPreco() + taxa;
 	}
 
 	@Override
 	public String etiquetaPreco() {
-		return super.getName() + String.format(" $ %.2f", total()) + String.format(" (Taxa: $ %.2f", taxa) + ")";
+		return super.getNome() + String.format(" $ %.2f", total()) + String.format(" (Taxa: $ %.2f", taxa) + ")";
 	}
 
 }

@@ -2,37 +2,36 @@ package entities;
 
 public class Produto {
 
-	private String name;
-	private Double price;
+	private String nome;
+	private Double preco;
 
 	public Produto() {
 
 	}
 
-	public Produto(String name, Double price) {
-		this.name = name;
-		this.price = price;
+	public Produto(String nome, Double preco) {
+		this.nome = nome;
+		this.preco = preco;
 	}
 
-	public String getName() {
-		return name;
+	public String getNome() {
+		return nome;
 	}
 
-	public void setName(String name) {
-		this.name = name;
+	public void setNome(String nome) {
+		this.nome = nome;
 	}
 
-	public Double getPrice() {
-		return price;
+	public Double getPreco() {
+		return preco;
 	}
 
-	public void setPrice(Double price) {
-		this.price = price;
+	public void setPreco(Double preco) {
+		this.preco = preco;
 	}
-	
+
 	public String etiquetaPreco() {
-		return "Nome: "+ name
-				+String.format(" $ %.2f", price);
+		return "Nome: " + nome + String.format(" $ %.2f", preco);
 	}
 
 }
